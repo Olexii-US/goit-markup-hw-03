@@ -71,6 +71,11 @@ body {
 
 /* Header-styles */
 
+header .container {
+  border-bottom: 1px solid #ECECEC;
+
+}
+
 .logo {
   font-family: 'Raleway',
   sans-serif;
@@ -126,12 +131,12 @@ body {
 .main-title {
   padding-bottom: 30px;
 
-
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 
   color: var(--primary-white-color);
 }
@@ -246,7 +251,18 @@ footer {
 /* portfolio */
 /* Фільтр */
 
+.filter {
+  margin-bottom: 50px;
+/* 
+  display: flex;
+  justify-content: center; */
+
+
+}
+
 .button-filter {
+  /* margin-right: 20px; */
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -268,15 +284,29 @@ footer {
   color: var(--main-background);
   background-color: var(--accent-colour);
 }
+/* < !-- Елементи фільтру --> */
+
+.project-link {
+  display: inline-block;
+  border: 1px solid #EEEEEE;
+  padding-bottom: 20px;
+}
 
 .project-title {
+  margin-top: 20px;
+  margin-left: 24px;
   font-size: 18px;
   line-height: 2.00;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
-.project-list {
+
+.project-text {
+  margin-top: 20px;
+  margin-left: 24px;
+
   font-size: 16px;
   line-height: 1.88;
   color: var(--secondary-text-color);
 }
+
