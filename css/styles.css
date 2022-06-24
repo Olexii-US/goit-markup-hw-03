@@ -71,9 +71,42 @@ body {
 
 /* Header-styles */
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav{display: flex;}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list> li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact>li:not(:last-child) {
+  margin-right: 50px;
+}
+
+
+.contact {display: flex;}
+
+.nav .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  background-color: aqua;
+}
+.nav-list {
+  margin-right: 100px;
+}
+
+
 header .container {
   border-bottom: 1px solid #ECECEC;
-
 }
 
 .logo {
@@ -166,6 +199,17 @@ header .container {
 
 /* Наші особливості */
 
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+
+  background-color: chartreuse;
+}
+.feature-list> li:not(:last-child) {
+  margin-right: 30px;
+}
+.feature-list> li {width: 270px;}
+
 .feature-title {
   font-size: 14px;
   line-height: 1.14;
@@ -186,6 +230,15 @@ header .container {
   background-color: aqua;
   padding-top: 0;
 }
+.works-list {
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+
+}
+.no-gap {
+  display: block;
+}
 
 .secondary-title {
   font-size: 36px;
@@ -201,10 +254,19 @@ header .container {
 
   background-color: var(--alternative-background);
 }
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
 .team-link {
   background-color: var(--main-background);
   text-align: center;
   padding-bottom: 30px;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-link> img {
