@@ -314,17 +314,16 @@ footer {
 /* Фільтр */
 
 .filter {
-  margin-bottom: 50px;
-/* 
   display: flex;
-  justify-content: center; */
+  justify-content: center;
+  margin-bottom: 50px;
+}
 
-
+.filter> li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button-filter {
-  /* margin-right: 20px; */
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -347,6 +346,29 @@ footer {
   background-color: var(--accent-colour);
 }
 /* < !-- Елементи фільтру --> */
+
+.project-items {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+
+  background-color: cyan;
+}
+
+.project-items> li {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 3);
+}
+
+.project-items> li:nth-child(3n) {
+  margin-right: 0px;
+
+  background-color: #EEEEEE;
+}
+.project-items> li:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
 
 .project-link {
   display: inline-block;
