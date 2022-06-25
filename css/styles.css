@@ -76,7 +76,6 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -95,19 +94,19 @@ body {
 }
 
 
-.contact {display: flex;}
+.contact {
+  display: flex;
+  margin-left: auto;
+
+}
 
 .nav .logo {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
 }
-.nav-list {
-  margin-right: 100px;
-}
 
-
-header .container {
+header {
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -263,7 +262,6 @@ header .container {
 .team-link {
   background-color: var(--main-background);
   text-align: center;
-  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -280,6 +278,7 @@ header .container {
 
 .team-text {
   color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 
 /* footer */
@@ -366,15 +365,15 @@ footer {
   margin-bottom: 0px;
 }
 
-.project-link {
-  display: inline-block;
-  border: 1px solid #EEEEEE;
-  padding-bottom: 20px;
+.project-link-container {
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+
+  padding: 20px 24px;
 }
 
 .project-title {
-  margin-top: 20px;
-  margin-left: 24px;
   font-size: 18px;
   line-height: 2.00;
   letter-spacing: 0.06em;
@@ -383,7 +382,6 @@ footer {
 
 .project-text {
   margin-top: 4px;
-  margin-left: 24px;
 
   font-size: 16px;
   line-height: 1.88;
